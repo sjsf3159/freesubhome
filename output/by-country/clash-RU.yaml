@@ -6,47 +6,38 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 78.159.247.246
+  server: 188.225.57.78
   port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  uuid: 01a21e01-6098-4c3b-a6fd-1a04d64d0c7f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sb2.hat.onl
+  reality-opts:
+    public-key: NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk
+  servername: app4.betust.net
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
+  server: 172.67.208.235
+  port: 2096
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: courses.mftplus.qzz.io
   network: ws
   ws-opts:
-    path: /ws
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+      Host: courses.mftplus.qzz.io
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
   server: 46.17.42.166
   port: 50111
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: vless
   server: 78.159.247.246
   port: 443
@@ -60,6 +51,13 @@ proxies:
     path: /ws
     headers:
       Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
