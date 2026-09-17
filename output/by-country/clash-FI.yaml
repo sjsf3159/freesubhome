@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 212.104.128.68
+  server: 212.104.128.139
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -20,21 +20,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 151.101.56.6
+  server: 212.104.128.152
   port: 443
-  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: c12.com
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
-  server: 212.104.128.139
+  server: 212.104.128.106
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -48,21 +48,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 05 - xiaohe
-  type: vless
-  server: 212.104.128.152
+  server: 212.104.128.206
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -74,7 +60,7 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 06 - xiaohe
+- name: 🇫🇮 FI 05 - xiaohe
   type: vless
   server: 185.79.138.71
   port: 448
@@ -86,7 +72,7 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - xiaohe
+- name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 185.79.138.71
   port: 448
@@ -109,7 +95,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
-  - 🇫🇮 FI 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -121,6 +106,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - xiaohe
   - 🇫🇮 FI 05 - xiaohe
   - 🇫🇮 FI 06 - xiaohe
-  - 🇫🇮 FI 07 - xiaohe
 rules:
 - MATCH,PROXIES
