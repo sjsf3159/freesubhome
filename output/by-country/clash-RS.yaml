@@ -4,16 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 DK 01 - xiaohe
-  type: ss
-  server: 38.180.214.110
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇰 DK 02 - xiaohe
+- name: 🇷🇸 RS 01 - xiaohe
   type: vless
-  server: 193.180.208.169
+  server: 185.105.108.92
   port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -30,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 DK 01 - xiaohe
-  - 🇩🇰 DK 02 - xiaohe
+  - 🇷🇸 RS 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 DK 01 - xiaohe
-  - 🇩🇰 DK 02 - xiaohe
+  - 🇷🇸 RS 01 - xiaohe
 rules:
 - MATCH,PROXIES
